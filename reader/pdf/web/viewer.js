@@ -3190,8 +3190,13 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "https://klscloud.github.io/test.pdf",
+    //value: "https://klscloud.github.io/test.pdf",
     kind: OptionKind.VIEWER
+  };
+  if(location.search.length>5){
+    defaultOptions.defaultUrl.value="https://klscloud.github.io/test.pdf";
+  }else{
+    defaultOptions.defaultUrl.value=location.search.slice(5);
   };
   defaultOptions.disablePreferences = {
     value: false,
