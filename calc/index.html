@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='./bignumber.min.js'></script>
+</head>
+<body>
+https://mikemcl.github.io/bignumber.js
+<br>
+x = new BigNumber(0.6)
+<br>
+y = x.multipliedBy(3)           // '1.8'
+<br>
+BigNumber('7e+500').times(y)    // '1.26e+501'
+<br>
+x.multipliedBy('-a', 16)   
+<br>
+
+x = new BigNumber(0.1)
+<br>
+y = x.plus(0.2)                 // '0.3'
+<br>
+BigNumber(0.7).plus(x).plus(y)  // '1.1'
+<br>
+x.plus('0.1', 8) 
+<br>
+
+x = new BigNumber(1.8)
+<br>
+x.negated()                     // '-1.8'
+<br>
+
+x = new BigNumber(355)
+<br>
+y = new BigNumber(113)
+<br>
+x.dividedBy(y)                  // '3.14159292035398230088'
+<br>
+x.div(5)                        // '71'
+<br>
+
+.pow(n)
+<br>
+.toNumber 
+<br>
+</body>
+</html>
