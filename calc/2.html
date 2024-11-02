@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='./bignumber.min.js'></script>
+</head>
+<body>
+<script>//   0       1       2
+const data=["11011","11100","00010",
+            "11001","01101","00111",
+            "01010","10001","10011",
+            "10111","11100","00011",
+            "11010","01010","10000",
+            "00000","00000","11101",
+            "10110","10010"];
+function getNum(n,m){//m Jin Zhi
+    var y=new BigNumber(1);
+    var a=new BigNumber(0);
+    for(var i=0;i<20;i++){
+        a=a.plus(y.times(Number(data[i][n])));
+        y=y.times(m);
+    }
+    return a;
+}
+</script>
+<br>
+</body>
+</html>
